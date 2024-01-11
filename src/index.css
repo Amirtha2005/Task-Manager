@@ -1,13 +1,113 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+  
+  }
+  
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  input {
+    max-width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #0069d9;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0053a6;
+  }
+
+
+  
+  /* taskManager page ________________________________________________________________ */
+
+ 
+  
+  .taskManager{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .taskdiv{
+    width: 33%;
+    background-color: #11163c;
+    border: solid white;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 2px;
+  }
+
+  /* filter css ________________________________________*/
+
+  .todo-nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heading{
+    margin-left: 1%;
+  }
+
+  .filter-dropdown {
+    margin-top: 1.5%;
+    margin-right: 2%;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .filter-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #04112e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;  /* Add this line */
+  }
+  
+  
+  .filter-options button {
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #04112e;
+    text-align: left;
+  }
+  
+  .filter-options button:hover {
+    background-color: #5065cb;
+  }
+  
+  /* calendar css___________________________ */
+
+  .calendar{
+    margin-left: 30%;
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+  }
